@@ -32,8 +32,12 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "com.dangxuanthong.composedekstopproguard"
+            packageName = "com.dangxuanthong.composedesktopproguard"
             packageVersion = "1.0.0"
+        }
+
+        buildTypes.release.proguard {
+            obfuscate.set(true)
         }
     }
 }
