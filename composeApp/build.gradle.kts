@@ -37,6 +37,7 @@ compose.desktop {
         }
 
         buildTypes.release.proguard {
+            version = "7.5.0"
             obfuscate.set(true)
         }
     }
